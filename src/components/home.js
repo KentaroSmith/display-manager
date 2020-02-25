@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {Jumbotron} from 'reactstrap'
+import {Jumbotron, Container} from 'reactstrap'
 class Home extends Component {
     render(){
         return(
+            <div>
+            <Container>
             <Jumbotron>
                 <h1>MSO Display Picker</h1>
                 <ul>
@@ -11,7 +13,10 @@ class Home extends Component {
                     <li><a href='/Settings'>Settings</a></li>
                 </ul>
             </Jumbotron>
+            </Container>
 
+            </div>
+           
         )
     }
 }
